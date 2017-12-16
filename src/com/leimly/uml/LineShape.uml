@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.leimly.draw.shape.LineShape</OriginalElement>
+  <nodes>
+    <node x="581.1218377976192" y="212.0">com.leimly.draw.draw.LineDraw</node>
+    <node x="626.7611607142856" y="0.0">com.leimly.draw.impl.PenShape</node>
+    <node x="0.0" y="91.0">com.leimly.draw.shape.EclipseShape</node>
+    <node x="291.0" y="91.0">com.leimly.draw.shape.EraserShape</node>
+    <node x="935.8718377976192" y="91.0">com.leimly.draw.shape.PencilShape</node>
+    <node x="535.6031250000001" y="91.0">com.leimly.draw.impl.Draw</node>
+    <node x="800.3718377976193" y="454.0">com.leimly.draw.Controller</node>
+    <node x="1382.0385044642858" y="343.0">javafx.application.Application</node>
+    <node x="211.5" y="343.0">com.leimly.draw.factory.TextFactory</node>
+    <node x="470.60312500000015" y="212.0">com.leimly.draw.impl.Factory</node>
+    <node x="1257.0385044642858" y="343.0">com.leimly.draw.MainStage</node>
+    <node x="738.3718377976192" y="212.0">com.leimly.draw.draw.RectangleDraw</node>
+    <node x="161.5" y="91.0">com.leimly.draw.shape.TextShape</node>
+    <node x="58.5" y="343.0">com.leimly.draw.factory.EclipseFactory</node>
+    <node x="770.8718377976192" y="91.0">com.leimly.draw.shape.RectangleShape</node>
+    <node x="1347.3028273809523" y="454.0">com.leimly.draw.Main</node>
+    <node x="1165.2885044642858" y="343.0">com.leimly.draw.Pen</node>
+    <node x="512.0111607142856" y="343.0">com.leimly.draw.factory.LineFactory</node>
+    <node x="1211.371837797619" y="0.0">javafx.event.EventTarget</node>
+    <node x="189.5" y="212.0">com.leimly.draw.draw.TextDraw</node>
+    <node x="348.2611607142856" y="343.0">com.leimly.draw.factory.EraserFactory</node>
+    <node x="871.8718377976192" y="343.0">com.leimly.draw.factory.PencilFactory</node>
+    <node x="1017.871837797619" y="343.0">com.leimly.draw.factory.CicleFactory</node>
+    <node x="692.8718377976192" y="343.0">com.leimly.draw.factory.RectangleFactory</node>
+    <node x="32.25" y="212.0">com.leimly.draw.draw.EclipseDraw</node>
+    <node x="1249.5385044642858" y="212.0">javafx.stage.Stage</node>
+    <node x="1077.871837797619" y="91.0">com.leimly.draw.shape.CicleShape</node>
+    <node x="632.1218377976192" y="91.0">com.leimly.draw.shape.LineShape</node>
+    <node x="910.3718377976192" y="212.0">com.leimly.draw.draw.PencilDraw</node>
+    <node x="1226.871837797619" y="91.0">javafx.stage.Window</node>
+    <node x="1054.371837797619" y="212.0">com.leimly.draw.draw.CicleDraw</node>
+    <node x="322.7798735119046" y="212.0">com.leimly.draw.draw.EraserDraw</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.leimly.draw.draw.RectangleDraw" target="com.leimly.draw.impl.Draw">
+      <point x="-35.0" y="-15.5" />
+      <point x="773.3718377976192" y="182.0" />
+      <point x="580.6031250000001" y="182.0" />
+      <point x="10.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.TextFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javafx.stage.Stage" target="javafx.stage.Stage">
+      <point x="0.0" y="0.0" />
+      <point x="1285.5385044642858" y="186.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.PencilFactory" target="com.leimly.draw.draw.PencilDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.LineFactory" target="com.leimly.draw.impl.Factory">
+      <point x="-28.25" y="-15.5" />
+      <point x="540.2611607142856" y="323.0" />
+      <point x="512.6031250000001" y="323.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.CicleDraw" target="com.leimly.draw.impl.Draw">
+      <point x="-26.0" y="-15.5" />
+      <point x="1080.371837797619" y="162.0" />
+      <point x="600.6031250000001" y="162.0" />
+      <point x="30.0" y="15.5" />
+    </edge>
+    <edge source="javafx.stage.Stage" target="javafx.stage.Window">
+      <point x="-18.0" y="-15.5" />
+      <point x="1267.5385044642858" y="192.0" />
+      <point x="1270.871837797619" y="192.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.factory.EraserFactory" target="com.leimly.draw.impl.Factory">
+      <point x="32.25" y="-15.5" />
+      <point x="445.0111607142856" y="323.0" />
+      <point x="500.60312500000015" y="323.0" />
+      <point x="-12.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.RectangleDraw" target="com.leimly.draw.shape.RectangleShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.RectangleFactory" target="com.leimly.draw.draw.RectangleDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.draw.EclipseDraw" target="com.leimly.draw.impl.Draw">
+      <point x="29.75" y="-15.5" />
+      <point x="121.5" y="172.0" />
+      <point x="540.6031250000001" y="172.0" />
+      <point x="-30.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.shape.PencilShape" target="com.leimly.draw.impl.PenShape">
+      <point x="1.1368683772161603E-13" y="-15.5" />
+      <point x="994.3718377976193" y="61.0" />
+      <point x="706.9040178571427" y="61.0" />
+      <point x="29.14285714285711" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.factory.RectangleFactory" target="com.leimly.draw.impl.Factory">
+      <point x="-38.5" y="-15.5" />
+      <point x="731.3718377976192" y="313.0" />
+      <point x="524.6031250000001" y="313.0" />
+      <point x="12.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.EclipseDraw" target="com.leimly.draw.shape.EclipseShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.draw.PencilDraw" target="com.leimly.draw.impl.Draw">
+      <point x="-28.0" y="-15.5" />
+      <point x="938.3718377976192" y="172.0" />
+      <point x="590.6031250000001" y="172.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.LineDraw" target="com.leimly.draw.impl.Draw">
+      <point x="-24.75" y="-15.5" />
+      <point x="605.8718377976192" y="192.0" />
+      <point x="570.6031250000001" y="192.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.PencilFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.EraserFactory" target="com.leimly.draw.draw.EraserDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.CicleFactory" target="com.leimly.draw.draw.CicleDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.shape.TextShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="215.0" y="61.0" />
+      <point x="648.6183035714284" y="61.0" />
+      <point x="-29.14285714285711" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.EclipseFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javafx.stage.Window" target="javafx.stage.Window">
+      <point x="0.0" y="0.0" />
+      <point x="1270.871837797619" y="65.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.shape.LineShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="684.1218377976192" y="71.0" />
+      <point x="677.7611607142856" y="71.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.Pen">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.shape.RectangleShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="843.3718377976192" y="71.0" />
+      <point x="692.3325892857142" y="71.0" />
+      <point x="14.571428571428555" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.MainStage" target="javafx.stage.Stage">
+      <point x="0.0" y="-15.5" />
+      <point x="24.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.shape.EclipseShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="62.0" y="51.0" />
+      <point x="634.046875" y="51.0" />
+      <point x="-43.714285714285666" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.factory.TextFactory" target="com.leimly.draw.impl.Factory">
+      <point x="29.0" y="-15.5" />
+      <point x="298.5" y="313.0" />
+      <point x="488.60312500000015" y="313.0" />
+      <point x="-24.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.factory.EclipseFactory" target="com.leimly.draw.draw.EclipseDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.RectangleFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.draw.PencilDraw" target="com.leimly.draw.shape.PencilShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.Main" target="com.leimly.draw.MainStage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javafx.stage.Window" target="javafx.event.EventTarget">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.LineFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.draw.EraserDraw" target="com.leimly.draw.impl.Draw">
+      <point x="28.75" y="-15.5" />
+      <point x="409.0298735119046" y="192.0" />
+      <point x="560.6031250000001" y="192.0" />
+      <point x="-10.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.shape.EraserShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="351.0" y="71.0" />
+      <point x="663.1897321428571" y="71.0" />
+      <point x="-14.571428571428555" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Main" target="javafx.application.Application">
+      <point x="16.25" y="-15.5" />
+      <point x="1396.0528273809523" y="434.0" />
+      <point x="1436.5385044642858" y="434.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.LineDraw" target="com.leimly.draw.shape.LineShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.EclipseFactory" target="com.leimly.draw.impl.Factory">
+      <point x="33.25" y="-15.5" />
+      <point x="158.25" y="303.0" />
+      <point x="476.60312500000015" y="303.0" />
+      <point x="-36.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.TextDraw" target="com.leimly.draw.shape.TextShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.LineFactory" target="com.leimly.draw.draw.LineDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.draw.EraserDraw" target="com.leimly.draw.shape.EraserShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.CicleFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.shape.CicleShape" target="com.leimly.draw.impl.PenShape">
+      <point x="0.0" y="-15.5" />
+      <point x="1132.371837797619" y="51.0" />
+      <point x="721.4754464285713" y="51.0" />
+      <point x="43.71428571428578" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.factory.PencilFactory" target="com.leimly.draw.impl.Factory">
+      <point x="-31.5" y="-15.5" />
+      <point x="903.3718377976192" y="303.0" />
+      <point x="536.6031250000001" y="303.0" />
+      <point x="24.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.MainStage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.Controller" target="com.leimly.draw.factory.EraserFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.CicleFactory" target="com.leimly.draw.impl.Factory">
+      <point x="-29.5" y="-15.5" />
+      <point x="1047.371837797619" y="293.0" />
+      <point x="548.6031250000001" y="293.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.TextDraw" target="com.leimly.draw.impl.Draw">
+      <point x="25.5" y="-15.5" />
+      <point x="266.0" y="182.0" />
+      <point x="550.6031250000001" y="182.0" />
+      <point x="-20.0" y="15.5" />
+    </edge>
+    <edge source="com.leimly.draw.draw.CicleDraw" target="com.leimly.draw.shape.CicleShape">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.leimly.draw.factory.TextFactory" target="com.leimly.draw.draw.TextDraw">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6309523809523809" x="746.0" y="243.43396226415098" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

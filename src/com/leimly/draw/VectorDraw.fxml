@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<FlowPane alignment="TOP_LEFT" hgap="10" prefHeight="374.0" prefWidth="839.0" vgap="10"
+          xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.leimly.draw.Controller">
+
+
+    <children>
+        <VBox prefHeight="124.0" prefWidth="985.0">
+            <children>
+                <MenuBar prefHeight="29.0" prefWidth="163.0">
+                    <menus>
+                        <Menu id="file" fx:id="file" mnemonicParsing="false" text="文件">
+                            <items>
+                                <MenuItem id="open" fx:id="open" mnemonicParsing="false" onAction="#setOpenFile"
+                                          text="打开"/>
+                                <MenuItem id="save" fx:id="save" mnemonicParsing="false" onAction="#setSaveFile"
+                                          text="保存"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <HBox prefHeight="78.0" prefWidth="567.0">
+                    <children>
+                        <VBox prefHeight="102.0" prefWidth="623.0">
+                            <children>
+                                <HBox prefHeight="142.0" prefWidth="625.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <VBox id="pencil" fx:id="pencil" onMouseClicked="#setPencilDraw"
+                                              prefHeight="60.0" prefWidth="208.0">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/pen.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="47.0" prefWidth="89.0" text="铅笔"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="line" fx:id="line" onMouseClicked="#setLineDraw" prefHeight="60.0"
+                                              prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/line.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="直线"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="rectangle" fx:id="rectangle" onMouseClicked="#setRectangleDraw"
+                                              prefHeight="60.0" prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/rectangleZ.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="矩形"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="eclipse" fx:id="eclipse" onMouseClicked="#setEclipseDraw"
+                                              prefHeight="60.0" prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/oval.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="椭圆"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="cicle" fx:id="cicle" onMouseClicked="#setCicleDraw" prefHeight="60.0"
+                                              prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="45.0" fitWidth="49.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/cicle.jpg"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="圆"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="eraser" fx:id="eraser" onMouseClicked="#setEraserDraw"
+                                              prefHeight="60.0" prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/rubber.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="橡皮擦"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="text" fx:id="text" onMouseClicked="#setTextDraw" prefHeight="60.0"
+                                              prefWidth="208.0" style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="143.0" prefWidth="30.0">
+                                                    <children>
+                                                        <ImageView fitHeight="60.0" fitWidth="70.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/text.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="文本"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <!--<VBox id="text" prefHeight="60.0" prefWidth="300.0"-->
+                                              <!--style="-fx-border-color: #f2f2f2;">-->
+                                            <!--<children>-->
+                                                <!--<Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0"-->
+                                                       <!--prefWidth="208.0" text="大小"/>-->
+                                                <!--<HBox alignment="CENTER" prefHeight="42.0" prefWidth="72.0">-->
+                                                    <!--<children>-->
+                                                        <!--<ChoiceBox fx:id="sizeMenu" onMouseClicked="#setPenSize"-->
+                                                                   <!--prefHeight="37.0" prefWidth="157.0"-->
+                                                                   <!--style="-fx-background-color: #f2f2f2;"/>-->
+                                                    <!--</children>-->
+                                                <!--</HBox>-->
+                                                <!--<Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0"-->
+                                                       <!--prefWidth="208.0" text="字体"/>-->
+                                                <!--<HBox alignment="CENTER" prefHeight="41.0" prefWidth="72.0">-->
+                                                    <!--<children>-->
+                                                        <!--<ChoiceBox fx:id="fontMenu" onMouseClicked="#setPenFont"-->
+                                                                   <!--prefHeight="7.0" prefWidth="157.0"-->
+                                                                   <!--style="-fx-background-color: #f2f2f2;"/>-->
+                                                    <!--</children>-->
+                                                <!--</HBox>-->
+                                            <!--</children>-->
+                                        <!--</VBox>-->
+                                    </children>
+                                </HBox>
+                                <HBox alignment="BOTTOM_CENTER" prefHeight="34.0" prefWidth="550.0">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0"
+                                               prefWidth="625.0" text="工具"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="102.0" prefWidth="228.0">
+                            <children>
+                                <HBox id="colorHbox" prefHeight="175.0" prefWidth="256.0"
+                                      style="-fx-background-color: white;">
+                                    <children>
+                                        <VBox id="pen_color" prefHeight="60.0" prefWidth="208.0"
+                                              style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <ColorPicker id="penColorPicker" fx:id="penColorPicker"
+                                                                     onAction="#setPenColor" opacity="0.5"
+                                                                     pickOnBounds="false" prefHeight="50.0"
+                                                                     prefWidth="110.0"
+                                                                     style="-fx-background-color: #e6e6e6;"/>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="14.0" prefWidth="208.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="画笔颜色"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox id="fill_color" prefHeight="60.0" prefWidth="208.0"
+                                              style="-fx-border-color: #f2f2f2;">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="44.0">
+                                                    <children>
+                                                        <ColorPicker id="fillColorPicker" fx:id="fillColorPicker"
+                                                                     onAction="#setFillColor" opacity="0.5"
+                                                                     pickOnBounds="true" prefHeight="50.0"
+                                                                     prefWidth="110.0"
+                                                                     style="-fx-background-color: #e6e6e6;"/>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="17.0" prefWidth="70.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER"
+                                                               prefHeight="23.0" prefWidth="208.0" text="填充颜色"/>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="46.0" prefWidth="256.0">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0"
+                                               prefWidth="211.0" text="颜色"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <AnchorPane fx:id="drawAnchorPane" onMouseDragReleased="#drawMouseDragReleased"
+                    onMouseDragged="#drawMouseDragged" onMousePressed="#drawMousePressed" prefHeight="727.0"
+                    prefWidth="1366.0" style="-fx-background-color: white">
+            <children>
+                <Group fx:id="drawGroup">
+                    <children>
+
+                    </children>
+                </Group>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</FlowPane>
